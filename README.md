@@ -44,11 +44,11 @@ Browsersync 修改html、css、js后实时刷新。
 
 ### Publish
 
-请先在`publish.sh` 里配好repo地址，然后
+请先在`publish.sh` 里配好repo地址，然后把已存在的build目录删掉，重新：
 
 ```javascript
 npm start
 npm run publish
 ```
 会提交到master分支和gh-pages分支
-浏览：`https://yourname.github.io/reponame/` 即可。
+浏览：`https://yourname.github.io/reponame/` 即可，print版访问：`https://yourname.github.io/reponame/print.html`。
