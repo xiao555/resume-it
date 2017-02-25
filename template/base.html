@@ -21,7 +21,7 @@
   </script>
   {% endif %}
 </head>
-<body>
+<body class="{% block body_class %}{% endblock %}">
   <div class="site">
     {% block main %}{% endblock %}
   </div>

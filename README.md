@@ -38,6 +38,10 @@ npm start
 自动打开浏览器访问：`http://localhost:4001/`。
 Browsersync 修改html、css、js后实时刷新。
 
+### Print
+
+新增print版本，直接打印即可，注意勾选背景图片
+
 ### Publish
 
 请先在`publish.sh` 里配好repo地址，然后

@@ -140,23 +140,24 @@ var MarkdownType = new yaml.Type('tag:yaml.org,2002:md', {
   kind: 'scalar',
   construct: function (text) {
     return md.render(text);
-    //return new nunjucks.runtime.markSafe(md.render(text));
   },
-  //instanceOf: Space
-  // `represent` is omitted here. So, Space objects will be dumped as is.
-  // That is regular mapping with three key-value pairs but with !space tag.
 });
 
 YAML_SCHEMA = yaml.Schema.create([ MarkdownType ]);
+
 var contents = fs.readFileSync('./data.yaml', 'utf8');
 var data = matter(contents, {schema: YAML_SCHEMA });
 data.data.content = data.content;
 // console.log('data', data);
 var context  = JSON.stringify(data.data);
-var conf = {
-    template:  '!!file-loader?name=../index.html!nunjucks-extend-loader?{"searchPaths":["template"],"context":'+ context +',"imgroot":"src"}!template/index.html', //html模板路径
-};
-config.plugins.push(new HtmlWebpackPlugin(conf));
+var pages = ['index','print'];
+pages.forEach(function(filename) {
+    var conf = {
+        template:  '!!file-loader?name=../'+ filename +'.html!nunjucks-extend-loader?{"searchPaths":["template"],"context":'+ context +',"imgroot":"src"}!template/'+ filename +'.html', //html模板路径
+    };
+    config.plugins.push(new HtmlWebpackPlugin(conf));
+});
+
 
 module.exports = config;
 
