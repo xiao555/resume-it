@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack --config webpack.config.js",
+    "publish": "chmod 500 publish.sh && ./publish.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
