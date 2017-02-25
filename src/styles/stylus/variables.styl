@@ -1,0 +1,29 @@
+// ----------------------
+// Custom global variables
+// ----------------------
+
+mq-desktop = 'screen and (min-width: 1024px)'
+mq-tablet = 'screen and (max-width: 1023px) and (min-width: 768px)'
+mq-mobile = 'screen and (max-width: 767px)'
+mq-below-desktop = 'screen and (max-width: 1023px)'
+
+
+
+orange = #EF8122
+
+// ----------------------
+// custom function
+// ----------------------
+
+placeholder2()
+  &::-webkit-input-placeholder
+    {block}
+  &:-moz-placeholder
+    {block}
+  &::-moz-placeholder
+    {block}
+  &:-ms-input-placeholder
+    {block}
+
+frac2perc(n)
+  return (n*100)%

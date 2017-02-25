@@ -1,0 +1,179 @@
+---
+update_time: '2017.2.24'
+name: 张睿武
+nickname: xiao555
+meta_content: 大三前端狗，HR姐姐们把我招到碗里去吧
+keywords: xiao555,前端,工作,简历
+ga_id: 'UA-92595311-1'
+age: 22岁
+gender: 男
+des: I'm a front end developer！
+school: 西安电子科技大学
+profession: 软件工程
+grade: 大三
+english_level: CET-6
+blog: 
+github: www.github.com/xiao555
+website: 
+intro: !!md |
+  我是一个前端开发者,现在正在努力学好它.我选择它的原因是我认为他是技术与艺术的结合.
+  噢，这是一年前的，现在我在一个国外的团队实习，基于WordPress搭建网站，正努力成为一个全栈开发者。
+apply_to_position: Web前端实习生
+contact:
+  -
+    icon: fa-envelope
+    name: Email
+    value: zhangruiwu32@gmail.com
+  -
+    icon: fa-qq
+    name: QQ
+    value: '1335497539'
+  -
+    icon: fa-phone-square
+    name: PhoneNumber
+    value: '17629008220'
+tech:
+  -
+    name: HTML/CSS
+    percentage: 80%
+  -
+    name: JavaScript
+    percentage: 60%
+  -
+    name: PHP
+    percentage: 40%
+  -
+    name: C/C++
+    percentage: 40%
+experience:
+  -
+    name: SSRGA
+    date: '2016.7'
+    img: http://ojxrgrrxt.bkt.clouddn.com/ssrga.jpg
+    website: http://www.ssrga.com/
+    source_code:
+    des: !!md |
+      这是我加入团队的第一个项目，在这个过程中我主要是快速学习使用我们的前端框架，学习用到的模板引擎Nunjucks，预处理器Stylus，YAML语法等等。
+      由于其他人比较忙，没时间管我，我自己遇到问题解决问题，最后还是因为有些地方不规范，被重写了。
+  -
+    name: Clubfit
+    date: '2016.8'
+    img: http://ojxrgrrxt.bkt.clouddn.com/clubfit.jpg
+    website: http://clubfit.vwmdev.com/
+    source_code:
+    des: !!md |
+      这是第二个项目，遇到了一些有意思的设计，比如首页头部的滚动隐藏，一些信息的点击展示，规范了表单，Grid的布局，自定义表单控件，弹出层等等。遇到比较难的是其中的一个课程表，习惯性的横向安排数据，发现由于每一天的课程数量不定，很难处理，改成竖向按天安排数据就很舒服了。
+      每天的代码leader会review，我再相应的做出修改，整个过程下来收获很多，是一次蜕变。
+  -
+    name: pyramidamerica
+    date: '2016.8'
+    img: http://ojxrgrrxt.bkt.clouddn.com/pyramidamerica.jpg
+    website: http://pyramidamerica.com/
+    source_code: 
+    des: !!md 这个是别人手里接过来的，已经可以独立完成前端项目了，算是一个电商网站，添加购物车取消等通过Ajax与后端通信
+  -
+    name: taldumande
+    date: '2016.9'
+    img: http://ojxrgrrxt.bkt.clouddn.com/taldumande.jpg
+    website: https://www.taldumande.org.au/
+    source_code: 
+    des: !!md |
+      这是第一个完完全全自己写前端的项目，设计也有很多有趣的地方，像header，footer部分两种颜色，为了不影响其它布局也比较方便用伪元素解决。
+      这个项目总的来说没有很难的地方，但是很考验布局能力。
+  -
+    name: workforceprofessionals
+    date: '2016.10'
+    img: http://ojxrgrrxt.bkt.clouddn.com/workforceprofessionals.jpg
+    website: https://workforceprofessionals.org/
+    source_code: 
+    des: !!md |
+      这个项目我开始写后端了，前端不是我写的，快速看了看PHP的语法，leader语音说了一下后端框架怎么用，我拿着这个项目鼓捣了两三天大体了解了基于wordpress的后端的工作方式，有些函数不会就去查wp的文档。
+      感觉这种项目后端相对于前端来说任务量比较小，核心功能已经写好了，我需要做的就是写项目有关的逻辑，数据的导入获取等等。但是理解后端的工作方式是困难但是必要的。
+      噢对，首页的下面的Twitter部分是我写的，之前获取tweet的方法各种key麻烦还不能用，我查了好久找到一个相关的js库，使用简单，老少皆宜。
+  -
+    name: equilibrium
+    date: '2016.10'
+    img: http://ojxrgrrxt.bkt.clouddn.com/equilibrium.jpg
+    website: https://www.equilibrium.design/
+    source_code: 
+    des: !!md |
+      这个项目给我安排了一个ga统计的任务，查文档学习了怎么发送自定义的events，自己研究了通过自定义维度的方式统计浏览者的IP(官方是不统计这个的)。
+  -
+    name: innerdoor
+    date: 2016.11 - 至今
+    img: http://ojxrgrrxt.bkt.clouddn.com/innerdoor.jpg
+    website: http://innerdoor.vwmdev.com/
+    source_code: 
+    des: !!md |
+      这个网站可能打不开，API开发那里网络还有问题。这个项目相当于一个会员系统，数据都是通过API来获取的，有大量的表格，需要从API获取大量的数据，处理数据，渲染到前端页面上。
+      一开始我直接根据name处理数据，从一堆数据中找出这个对应的值，后来发现这样做代码量很大，而且不够灵活。后来以API的分类为标准重新安排了一下数据结构，前端表单也相应的修改，通过模板引擎跟后端对应起来，这样既大大减少了代码量，也提高了灵活性。
+  -
+    name: Webjucks
+    date: 2017.2
+    img: 
+    website: https://github.com/xiao555/Webjucks
+    source_code: 
+    des: !!md |
+      寒假自己写了个多页应用脚手架，选择WebPack打包，因为我们团队的前端框架是webpack的，而且未来应该是单页应用的天下了，webpack其实比较适合单页应用。
+      那为啥我用来写多页应用？ 一是比较熟悉，二是像Vue，React这些我还没应用到开发中，当然，这个框架的下一步就是写一个基于Vue+Webpack的单页应用脚手架。
+      开发过程中主要是研究了怎么配置webpack，怎么实时开发浏览结果，怎么安排项目结构。
+  -
+    name: nunjucks-extend-loader
+    date: 2017.2
+    img: 
+    website: https://github.com/xiao555/nunjucks-extend-loader
+    source_code: 
+    des: !!md |
+      开发框架的过程中，自己写了个loader，已发布在npm上。了解了Node开发，遇到的主要问题是怎么把src里的一张图片复制到public里相同目录的位置。
+      Node的fs模块不会自动给你把前面的目录创建好，所以要自己写个函数递归创建不存在的目录，最后通过回调函数完成最后一步copy文件的动作，否则前面目录还没建好，文件就开始复制报错了。
+skill:
+  -
+    category: Web前端
+    contents:
+      -
+        title: HTML/CSS 
+        des: !!md | 
+          能够编写语义化的html，搭配css完成较复杂的布局
+          熟悉Stylus、PostCss 等css预处理、后处理工具
+      -
+        title: Js
+        des: !!md |
+          js算是我的一个弱项，原生js记不住，红皮书没看完，但是平时大部分需求都能用jquery实现，不会就google。
+          所以感觉js基础不够让我没有把握，ES6 也没专门学过，下一步js上多下点功夫吧。
+      -
+        title: 其他
+        des: !!md |
+          了解 Webpack Browsersync Git 等开发工具
+  -
+    category: 后端
+    contents:
+      -
+        title: PHP
+        des: !!md 因为项目需要学的，不能说熟练，但是能做出东西来，github上有个repo [PHP-Router](https://github.com/xiao555/PHP-Router)，会慢慢扩展成完整的后端框架。
+      -
+        title: Express
+        des: !!md |
+          大二下决心好好学前端，然后那学期有软工和数据库大作业，我想肯定需要用到后端的，正好js学过，那就用Node.js吧，Express当时大家用的挺多的，然后就开始用它写了好多东西，
+          [个人网站](https://github.com/xiao555/personalWebsite)，基于Websocket的[实时聊天室](https://github.com/xiao555/ChatRoom)，[软工大作业](https://github.com/xiao555/Personal-Internet-Banking-System)，[数据库大作业](https://github.com/xiao555/TravelOrderSystem)等等。后面[个人网站](https://github.com/xiao555/personalWebsite)，博客(Hexo)等会重写，后端打算用Koa2
+      -
+        title: Mysql
+        des: !!md 写[数据库大作业](https://github.com/xiao555/TravelOrderSystem) 数据库部分就是Mysql，基本的增删改查
+      -
+        title: MongoDB
+        des: !!md 写[个人网站](https://github.com/xiao555/personalWebsite)、[实时聊天室](https://github.com/xiao555/ChatRoom)、[软工大作业](https://github.com/xiao555/Personal-Internet-Banking-System)都是用的MongoDB
+      - 
+        title: Linux
+        des: |
+          自己租了国外的VPS，之前是搬瓦工，现在是DigitalOcean，部署过个人网站，博客等等(现在已经没了)。 对linux 比较熟悉。
+  -
+    category: 其他
+    contents: !!md |
+      学习能力挺强的，现在感觉生活就是不断的踩坑不断的学习。
+      书看的挺少的，买了一堆书基本都看前面一部分。
+      执行能力挺强的，布置的任务会保质保量完成。
+      责任感也挺强的，做了不负责任的事会很难受啊。
+      挺希望找到一份好工作的，说不希望都是假的。
+      这就是我，HR美眉快来联系我啊^_^
+      
+
+---
