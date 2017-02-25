@@ -1,6 +1,8 @@
 Resume-it
 ======
 一个灵活的数据模板分离的在线简历生成器。
+效果：https://xiao555.github.io/Resume/
+如果喜欢的话请给个star ^_^
 ## Configuration
 ### 默认模板
 
@@ -46,5 +48,3 @@ npm run publish
 ```
 会提交到master分支和gh-pages分支
 浏览：`https://yourname.github.io/reponame/` 即可。
-
-如果喜欢的话请给个star ^_^
