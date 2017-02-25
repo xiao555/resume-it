@@ -16,6 +16,8 @@ html部分在`template/index.html`，这一部分是页面body的内容，采用
 
 css部分在`src/styles`, 用stylus写的话写在`stylus`，css写的写在`styles`，新建的文件需要在`index.js`里`import`一下，也可以import npm安装的库。
 
+stylus的一些变量函数可以放在`variables.styl`, 其他文件直接用就行
+
 注：
 1. 已经加载了font-awesome，可以直接用
 2. 加载了PostStylus，autoprefixer插件自动补全前缀

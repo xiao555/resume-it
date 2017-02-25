@@ -13,7 +13,7 @@ profession: 软件工程
 grade: 大三
 english_level: CET-6
 blog: 
-github: www.github.com/xiao555
+github: https://www.github.com/xiao555
 website: 
 intro: !!md |
   我是一个前端开发者,现在正在努力学好它.我选择它的原因是我认为他是技术与艺术的结合.
@@ -111,8 +111,8 @@ experience:
     name: Webjucks
     date: 2017.2
     img: 
-    website: https://github.com/xiao555/Webjucks
-    source_code: 
+    website: 
+    source_code: https://github.com/xiao555/Webjucks
     des: !!md |
       寒假自己写了个多页应用脚手架，选择WebPack打包，因为我们团队的前端框架是webpack的，而且未来应该是单页应用的天下了，webpack其实比较适合单页应用。
       那为啥我用来写多页应用？ 一是比较熟悉，二是像Vue，React这些我还没应用到开发中，当然，这个框架的下一步就是写一个基于Vue+Webpack的单页应用脚手架。
@@ -121,11 +121,19 @@ experience:
     name: nunjucks-extend-loader
     date: 2017.2
     img: 
-    website: https://github.com/xiao555/nunjucks-extend-loader
-    source_code: 
+    website: 
+    source_code: https://github.com/xiao555/nunjucks-extend-loader
     des: !!md |
       开发框架的过程中，自己写了个loader，已发布在npm上。了解了Node开发，遇到的主要问题是怎么把src里的一张图片复制到public里相同目录的位置。
       Node的fs模块不会自动给你把前面的目录创建好，所以要自己写个函数递归创建不存在的目录，最后通过回调函数完成最后一步copy文件的动作，否则前面目录还没建好，文件就开始复制报错了。
+  -
+    name: Resume-it
+    date: 2017.2
+    img: 
+    website: 
+    source_code: https://github.com/xiao555/Resume-it
+    des: !!md |
+      就是它生成的这个简历。前几天知乎上看大家的简历，也有人写了简历生成器，但是只是基于他自己的模板，所以我就想搞一个数据模板分离的，这样无论换模板还是改数据都非常方便。
 skill:
   -
     category: Web前端
