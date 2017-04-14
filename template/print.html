@@ -1,5 +1,94 @@
-{% extends 'index.html' %}
+{% extends 'base.html' %}
 {% block body_class %}print{% endblock %}
-{% block online_resume %}
-<dd><span>在线简历:</span> <a href="{{ online }}" target="_blank">{{ online }}</a></dd>
+{% block main %}
+<div class="container">
+    <div class="sidebar">
+        <div class="title">
+            {% include 'head.html' %}
+            <h1>{{ name }}的简历</h1>
+            <h2>{{ des }}</h2>
+        </div>
+        <ul class="side-info">
+            <li class="someRight">
+                <dt><i class="fa fa-bookmark"></i>Basic info. 基本信息</dt>
+                <dd><span>个人信息:</span> {{ name }} / {{ gender }} / {{ age }} / {{ grade }}</dd>
+                <dd><span>学校：</span>{{school}}</dd>
+                {% if english_level %}
+                <dd><span>英语水平:</span> {{ english_level }}</dd>
+                {% endif %}
+                {% if nickname %}
+                <dd><span>常用ID:</span> {{ nickname }}</dd>
+                {% endif %}
+                {% if blog %}
+                <dd><span>Blog:</span> <a href="{{ blog }}" target="_blank">{{ blog }}</a></dd>
+                {% endif %}
+                {% if github %}
+                <dd><span>GitHub:</span> <a href="{{ github }}" target="_blank">{{ github }}</a></dd>
+                {% endif %}
+                <dd><span>在线简历:</span> <a href="{{ online }}" target="_blank">{{ online }}</a></dd>
+            </li>
+            <li class="someRight">
+                <dt><i class="fa fa-bookmark"></i>Contact. 联系方式</dt>
+                {% for item in contact %}
+                    <dd><i class="fa {{ item.icon }}"></i>{{ item.name }}: <a {% if item.name == 'Email' %}href="mailto:{{ item.value }}"{% endif %} target="_blank">{{ item.value }}</a></dd>
+                {% endfor %}
+            </li>
+            <li class="someRight">
+                <dt><i class="fa fa-bookmark"></i>Application. 应聘岗位</dt>
+                <dd>{{ apply_to_position }}</dd>
+            </li>
+            <li class="skill">
+                <dt><i class="fa fa-bookmark"></i>Tech. 技能点</dt>
+                {% for item in tech %}
+                <dd>
+                    <div class="skill-name">{{ item.name }}</div>
+                    <div class="skill-bar-wrap">
+                        <div class="skill-bar" style="width: {{ item.percentage }}"></div>
+                    </div>
+                </dd>
+                {% endfor %}
+            </li>
+        </ul>
+        <div class="note">
+            {{ intro |safe }}
+        </div>
+    </div>
+    <div class="main">
+        <ul class="main-info">
+            <li class="skill">
+                <dt><i class="fa fa-bookmark"></i>Skill. 技能清单</dt>
+                {% for item in skill %}
+                <ul class="exp">
+                  <li>{{ item.des |safe }}</li>
+                </ul>
+                {% endfor %}
+            </li>
+            <li>
+                <dt><i class="fa fa-bookmark"></i>Experience. 项目与实习经验</dt>
+                {% for exp in experience %}
+                <h2 class="exp-title">{{exp.section}}</h2>
+                <ul class="exp">
+                    {% for item in exp.project %}
+                    <li>
+                        <div class="circle"></div>
+                        <h4>{{ item.name }} {{ item.date }}
+                        {% if item.website %}
+                        <a href="{{ item.website }}" target="_blank"><i class="fa fa-link"></i>Demo</a>
+                        {% endif %}
+                        {% if item.source_code %}
+                        <a href="{{ item.source_code }}" target="_blank"><i class="fa fa-link"></i>SourceCode</a>
+                        {% endif %}
+                        </h4>
+                        <div class="clearfix">
+                          {% if item.img %}<img src="{{ item.img }}">{% endif %}
+                          {{ item.des |safe }}
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endfor %}
+            </li>
+        </ul>
+    </div>
+</div>
 {% endblock %}

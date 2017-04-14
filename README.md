@@ -3,6 +3,9 @@ Resume-it
 一个灵活的数据模板分离的在线简历生成器。
 效果：https://xiao555.github.io/Resume/
 如果喜欢的话请给个star ^_^
+
+Node version v5.5.0
+
 ## Configuration
 ### 默认模板
 

@@ -1,6 +1,9 @@
 global-reset()
 normalize-css()
 
+.clearfix
+  clearfix()
+
 body
   background #e0e0e0
   font-family 'Helvetica Neue', Helvetica, 'Lucida Grande', Arial, 'Hiragino Sans GB', '微软雅黑', 'WenQuanYi Micro Hei', STHeiti, SimSun, sans-serif
@@ -139,6 +142,13 @@ h3, h4
 .main-info span 
   color #000
   font-size 16px
+  
+h2
+  font-size 22px
+  color #004d40
+  font-weight 800
+  &.exp-title
+    margin 10px 0
 
 
 h3 
@@ -202,11 +212,21 @@ h5 a
 .exp > li 
   position relative
   top -5px
-  margin 0 0 20px 20px
+  margin 20px 0 20px 20px
+
+.skill .exp
+  border-left 0
+  & li
+    list-style circle
 
 
 .exp img 
   width 200px
+  
+.exp img
+  width 150px
+  float left
+  margin-right 10px
 
 
 .exp ul > li 
