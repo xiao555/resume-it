@@ -4,7 +4,8 @@
   "description": "A resume generator",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --config webpack.config.js",
+    "start": "webpack --config ./build/webpack.dev.config",
+    "build": "NODE_ENV=production webpack --config ./build/webpack.prod.config --progress --hide-modules",
     "publish": "rimraf build && chmod 500 publish.sh && ./publish.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -52,7 +53,8 @@
     "stylus-loader": "^2.4.0",
     "stylus-url": "0.0.1",
     "webpack": "^1.13.1",
-    "webpack-config": "^6.2.1"
+    "webpack-config": "^6.2.1",
+    "webpack-merge": "^4.1.0"
   },
   "author": "xiao555",
   "license": "MIT"

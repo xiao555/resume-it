@@ -1,5 +1,5 @@
 echo 'publish starting'
-cd build
+cd dist
 git init
 git add .
 git commit -m "publish"

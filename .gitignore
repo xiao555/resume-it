@@ -5,3 +5,4 @@ tools/lib
 build
 sftp-config.json
 vendor
+dist
