@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack --config ./build/webpack.dev.config",
     "build": "NODE_ENV=production webpack --config ./build/webpack.prod.config --progress --hide-modules",
-    "publish": "rimraf build && chmod 500 publish.sh && ./publish.sh",
+    "publish": "rimraf dist && npm run build && ./publish.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
