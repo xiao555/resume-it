@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack --config webpack.config.js",
-    "publish": "rimrif build && chmod 500 publish.sh && ./publish.sh",
+    "publish": "rimraf build && chmod 500 publish.sh && ./publish.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -46,6 +46,7 @@
     "postcss-loader": "^1.2.2",
     "poststylus": "^0.2.3",
     "raw-loader": "^0.5.1",
+    "rimraf": "^2.6.1",
     "style-loader": "^0.13.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^2.4.0",
