@@ -3,6 +3,7 @@ Resume-it
 <a href="http://www.wtfpl.net/"><img
        src="http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-4.png"
        width="80" height="15" alt="WTFPL" /></a>
+       
 一个灵活的数据模板分离的在线简历生成器。
 效果：https://xiao555.github.io/Resume/
 如果喜欢的话请给个star ^_^
