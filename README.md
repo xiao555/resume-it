@@ -75,6 +75,6 @@ npm run publish
 会提交到master分支和gh-pages分支
 浏览：`https://yourname.github.io/reponame/` 即可，print版访问：`https://yourname.github.io/reponame/print.html`。
 
-## LISCENSE
+## LICENSE
 
 WTFPL 
