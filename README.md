@@ -43,22 +43,20 @@ css部分在`src/styles/stylus`, 默认用stylus写。
 
 ## Usage
 
+### 安装依赖
+
+```javascript
+npm i
+```
+
 ### Dev
 
 ```javascript
-npm i
 npm start
 ```
-自动打开浏览器访问：`http://localhost:3000/`。
-Browsersync 带热重载功能。
+自动打开浏览器访问：`http://localhost:3000/`。 Browsersync 带热重载功能。
 
-### Print
-
-```javascript
-npm i
-npm start
-```
-首页最下面有个打印版链接 或者 访问 `http://localhost:3000/print.html`，直接打印即可，注意勾选背景图片
+打印版: 首页最下面有个打印版链接 或者 访问 `http://localhost:3000/print.html`，直接打印即可，注意勾选背景图片
 
 ### Public
 
