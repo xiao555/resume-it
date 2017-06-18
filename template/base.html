@@ -6,8 +6,7 @@
   <meta name="description" content="{{ meta_content }}">
   <meta name="keywords" content="{{ keywords }}">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1">
-  <link rel="shortcut icon" href="assets/favicon.ico">
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/styles.css">
   {% if ga_id %}
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -27,8 +26,8 @@
   </div>
 <footer>
     <p>Theme by <a {% if website %}href="{{ website }}"{% else %}
-        {% if github %}href="{{ github }}"{% endif %}{% endif %} target="_blank">{{ nickname }}</a>. Made with <i class="fa fa-heart throb" style="color: #d43f57;"></i> by <a href="https://github.com/xiao555/Resume-it" target="_blank">Resume-it</a>. 最后更新于{{ update_time }}</p>
+        {% if github %}href="{{ github }}"{% endif %}{% endif %} target="_blank">{{ nickname }}</a>. Made with <i class="fa fa-heart throb" style="color: #d43f57;"></i> by <a href="https://github.com/xiao555/Resume-it" target="_blank">Resume-it</a>. 最后更新于{{ update_time }} <a href="./print.html">打印版</a></p>
 </footer>
-<script src="assets/main.js"></script>
+<script src="assets/scripts.js"></script>
 </body>
 </html>

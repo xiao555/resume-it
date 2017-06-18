@@ -1,7 +1,4 @@
 node_modules
 npm-debug.log
 .DS_Store
-tools/lib
-sftp-config.json
-vendor
 dist

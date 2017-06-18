@@ -1,14 +1,11 @@
 Resume-it
 ======
-<a href="http://www.wtfpl.net/"><img
-       src="http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-4.png"
-       width="80" height="15" alt="WTFPL" /></a>
-       
+
 一个灵活的数据模板分离的在线简历生成器。
 效果：https://xiao555.github.io/Resume/
 如果喜欢的话请给个star ^_^
 
-Node version v5.5.0 以上
+Node version v7.7.0
 
 ## 风格参考
 
@@ -32,19 +29,15 @@ html部分在`template/index.html`，这一部分是页面body的内容，采用
 
 #### 2. CSS
 
-css部分在`src/styles`, 用stylus写的话写在`stylus`，css写在`styles`，新建的文件需要在`index.js`里`import`一下，也可以import npm安装的库。
-
-stylus的一些变量、函数可以放在`variables.styl`, 其他文件直接用就行
+css部分在`src/styles/stylus`, 默认用stylus写。
 
 注：
 1. 已经加载了font-awesome，可以直接用
-2. 加载了PostStylus，autoprefixer插件自动补全前缀
-3. 除了`variables.styl`默认导入，其他css文件都要在index.js里`import`
+2. 加载了autoprefixer插件自动补全前缀
 
 #### 3. 其他文件
 
-1. 添加图片, 放在`src/assets/images/`, 引用的时候无论html还是css路径这样写`assets/path/to/file`即可。
-2. 添加字体文件, 放在`src/assets/fonts/`, 然后在`src/styles/stylus/fonts.styl`里导入。
+注：现在改用gulp打包了，如果要添加其他文件的话需要写一下配置文件`gulpfile.js`, 暂时没有提供打包其他文件的task
 
 ## Usage
 
@@ -54,8 +47,8 @@ stylus的一些变量、函数可以放在`variables.styl`, 其他文件直接�
 npm i
 npm start
 ```
-自动打开浏览器访问：`http://localhost:4001/`。
-Browsersync 修改html、css、js后实时刷新。
+自动打开浏览器访问：`http://localhost:3000/`。
+Browsersync 带热重载功能。
 
 ### Print
 
@@ -63,18 +56,23 @@ Browsersync 修改html、css、js后实时刷新。
 npm i
 npm start
 ```
-访问 `http://localhost:4001/print.html`，直接打印即可，注意勾选背景图片
+首页最下面有个打印版链接 或者 访问 `http://localhost:3000/print.html`，直接打印即可，注意勾选背景图片
 
-### Publish
+### Public
 
-请先在`publish.sh` 里配好repo地址，然后：
+请先在`public.js` 里配好repo地址，然后：
 
 ```javascript
-npm run publish
+npm run public
 ```
 会提交到master分支和gh-pages分支
 浏览：`https://yourname.github.io/reponame/` 即可，print版访问：`https://yourname.github.io/reponame/print.html`。
 
+## 更新日志
+
+2017.6.18
+  调整结构，采用 Gulp 打包，public 用 `simple-git`, 不用shell脚本了
+
 ## LICENSE
 
-WTFPL 
+WTFPL
