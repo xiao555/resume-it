@@ -5,7 +5,7 @@ Resume-it
 效果：https://xiao555.github.io/Resume/
 如果喜欢的话请给个star ^_^
 
-![](http://ojxrgrrxt.bkt.clouddn.com/resume.jpg)
+![](./resume.jpg)
 
 Node version v7.7.0
 
