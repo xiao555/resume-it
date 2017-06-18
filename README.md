@@ -17,7 +17,7 @@ Node version v7.7.0
 
 ### 使用默认模板
 
-这个默认模板是参考@DIYgod](http://html.love/) 的，如果直接用的话只需要修改 `data.yaml` 里的数据即可。
+这个默认模板是参考@[DIYgod](http://html.love/) 的，如果直接用的话只需要修改 `data.yaml` 里的数据即可。
 
 1. YAML语法可以参考[这里](http://www.ruanyifeng.com/blog/2016/07/yaml.html)
 2. 如果需要用到Markdowm语法，请在字段开头加上 `!!md `，相应的前端模板要渲染md的话请加上safe过滤：`{{ example | safe}}`
