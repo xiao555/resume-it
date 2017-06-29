@@ -75,4 +75,4 @@ npm run public
 
 ## LICENSE
 
-WTFPL
+MIT
