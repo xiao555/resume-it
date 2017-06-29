@@ -26,7 +26,9 @@
                 {% if github %}
                 <dd><span>GitHub:</span> <a href="{{ github }}" target="_blank">{{ github }}</a></dd>
                 {% endif %}
+                {% if online %}
                 <dd><span>在线简历:</span> <a href="{{ online }}" target="_blank">{{ online }}</a></dd>
+                {% endif %}
             </li>
             <li class="someRight">
                 <dt><i class="fa fa-bookmark"></i>Contact. 联系方式</dt>
@@ -65,7 +67,7 @@
                 {% endfor %}
             </li>
             <li>
-                <dt><i class="fa fa-bookmark"></i>Experience. 项目与实习经验</dt>
+                <dt><i class="fa fa-bookmark"></i>Experience. 项目经验</dt>
                 {% for exp in experience %}
                 <h2 class="exp-title">{{exp.section}}</h2>
                 <ul class="exp">
