@@ -39,6 +39,16 @@
                 <dt><i class="fa fa-bookmark"></i>Application. 应聘岗位</dt>
                 <dd>{{ apply_to_position }}</dd>
             </li>
+            <li class="someRight">
+                <dt><i class="fa fa-bookmark"></i>Honor. 奖项荣誉</dt>
+                <dd>
+                    {% for item in honor %}
+                    <ul>
+                        <li>{{ item.date |safe }} {{ item.name |safe }}</li>
+                    </ul>
+                    {% endfor %}
+                </dd>
+            </li>
             <li class="skill">
                 <dt><i class="fa fa-bookmark"></i>Tech. 技能点</dt>
                 {% for item in tech %}

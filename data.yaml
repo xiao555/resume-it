@@ -30,6 +30,10 @@ contact:
     icon: fa-phone-square
     name: PhoneNumber
     value: '18729316081'
+honor:
+  -
+    name: XXXX大赛一等奖
+    date: 2017.07
 tech:
   -
     name: HTML/CSS
