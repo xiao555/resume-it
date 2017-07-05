@@ -39,6 +39,7 @@
                 <dt><i class="fa fa-bookmark"></i>Application. 应聘岗位</dt>
                 <dd>{{ apply_to_position }}</dd>
             </li>
+            {% if honor %}
             <li class="someRight">
                 <dt><i class="fa fa-bookmark"></i>Honor. 奖项荣誉</dt>
                 <dd>
@@ -49,6 +50,22 @@
                     {% endfor %}
                 </dd>
             </li>
+            {% endif %}
+            {% if exper %}
+            <li class="someRight">
+                <dt><i class="fa fa-bookmark"></i>Experience. 实习经历</dt>
+                <dd>
+                    {% for item in exper %}
+                    <ul>
+                        <li>
+                          {{ item.date }}   {{ item.company }}
+                          <p>{{ item.desc | safe}}</p>
+                        </li>
+                    </ul>
+                    {% endfor %}
+                </dd>
+            </li>
+            {% endif %}
             <li class="skill">
                 <dt><i class="fa fa-bookmark"></i>Tech. 技能点</dt>
                 {% for item in tech %}
@@ -61,9 +78,11 @@
                 {% endfor %}
             </li>
         </ul>
+        {% if intro %}
         <div class="note">
             {{ intro |safe }}
         </div>
+        {% endif %}
     </div>
     <div class="main">
         <ul class="main-info">

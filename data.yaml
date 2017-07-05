@@ -17,7 +17,7 @@ website:
 online: https://xiao555.github.io/Resume/
 print: https://xiao555.github.io/Resume/print.html
 apply_to_position: Web前端实习生
-contact:
+contact: # 联系方式
   -
     icon: fa-envelope
     name: Email
@@ -30,11 +30,19 @@ contact:
     icon: fa-phone-square
     name: PhoneNumber
     value: '18729316081'
-honor:
+honor: # 奖项荣誉
+exper: # 实习经历
   -
-    name: XXXX大赛一等奖
-    date: 2017.07
-tech:
+    date: 2016.7 - 2017.5
+    company: WPNinja
+    desc: !!md |
+      前五个月负责前端部分的开发, 最大程度的还原设计稿，完成页面交互，后面开始负责后端PHP开发
+  -
+    date: 2017.7 - 2017.9
+    company: 腾讯
+    desc: !!md |
+      即将开始的腾讯暑期实习
+tech: # 技能点
   -
     name: HTML/CSS
     percentage: 80%
@@ -43,14 +51,14 @@ tech:
     percentage: 60%
   -
     name: PHP
-    percentage: 40%
+    percentage: 50%
   -
     name: Git
     percentage: 60%
   -
     name: Node.js
     percentage: 40%
-experience:
+experience: # 项目经验
   -
     section: 个人项目
     project:
@@ -77,7 +85,7 @@ experience:
         website:
         source_code: https://github.com/xiao555/Resume-it
         des: !!md |
-          知乎上看大家的简历，感觉模板很多，但个人信息是不变的，所以我就想搞一个数据模板分离的简历生成器，这样无论换模板还是改数据都非常方便。暂时 25 star，12 fork，有人用是最好的。
+          知乎上看大家的简历，感觉模板很多，但个人信息是不变的，所以我就想搞一个数据模板分离的简历生成器，这样无论换模板还是改数据都非常方便。暂时 42 star，19 fork，有人用是最好的。
       -
         name: Blog
         date: 2017.4-至今
@@ -133,7 +141,7 @@ experience:
         des: !!md |
           这个项目相当于一个会员系统，数据都是通过API来获取的，有大量的表格，需要从API获取大量的数据，处理数据，渲染到前端页面上。
           一开始我写了一堆if-else，数据跟表单一一对应，后来发现这样做代码量很大，而且不够灵活。后来重新安排数据结构，用label作为key值，前端表单label作为value值，通过模板引擎跟后端对应起来，这样既大大减少了代码量，也提高了灵活性。
-skill:
+skill: # 技能清单
       -
         des: !!md |
           能够用 HTML + CSS 编写语义化的代码，完成较复杂的布局，熟悉Stylus、PostCss 等css预处理、后处理工具

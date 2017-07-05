@@ -68,6 +68,13 @@ npm run public
 会提交到master分支和gh-pages分支
 浏览：`https://yourname.github.io/reponame/` 即可，print版访问：`https://yourname.github.io/reponame/print.html`。
 
+## TODO
+
+1. 数据内容直接在页面上修改
+2. 多模板
+3. 命令行接口
+4. 在线编辑+发布+导出
+
 ## 更新日志
 
 2017.6.18
