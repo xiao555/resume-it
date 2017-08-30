@@ -67,7 +67,7 @@
             </li>
             {% endif %}
             <li class="skill">
-                <dt><i class="fa fa-bookmark"></i>Tech. 技能点</dt>
+                <dt><i class="fa fa-bookmark"></i>Tech. 主要技能点</dt>
                 {% for item in tech %}
                 <dd>
                     <div class="skill-name">{{ item.name }}</div>
@@ -97,26 +97,58 @@
             <li>
                 <dt><i class="fa fa-bookmark"></i>Experience. 项目经验</dt>
                 {% for exp in experience %}
-                <h2 class="exp-title">{{exp.section}}</h2>
-                <ul class="exp">
-                    {% for item in exp.project %}
-                    <li>
-                        <div class="circle"></div>
-                        <h4>{{ item.name }} {{ item.date }}
-                        {% if item.website %}
-                        <a href="{{ item.website }}" target="_blank"><i class="fa fa-link"></i>Demo</a>
-                        {% endif %}
-                        {% if item.source_code %}
-                        <a href="{{ item.source_code }}" target="_blank"><i class="fa fa-link"></i>SourceCode</a>
-                        {% endif %}
-                        </h4>
-                        <div class="clearfix">
-                          {% if item.img %}<img src="{{ item.img }}">{% endif %}
-                          {{ item.des |safe }}
-                        </div>
-                    </li>
-                    {% endfor %}
-                </ul>
+                    {% if exp.section == '个人项目' %}
+                        <h2 class="exp-title">{{exp.section}}</h2>
+                        <ul class="exp">
+                            {% for item in exp.project %}
+                            <li>
+                                <div class="circle"></div>
+                                <h4>{{ item.name }} {{ item.date }}
+                                {% if item.website %}
+                                <a href="{{ item.website }}" target="_blank"><i class="fa fa-link"></i>Demo</a>
+                                {% endif %}
+                                {% if item.source_code %}
+                                <a href="{{ item.source_code }}" target="_blank"><i class="fa fa-link"></i>SourceCode</a>
+                                {% endif %}
+                                </h4>
+                                <div class="clearfix">
+                                  {% if item.img %}<img src="{{ item.img }}">{% endif %}
+                                  {{ item.des |safe }}
+                                </div>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    {% else %}
+                        <h2 class="exp-title">{{exp.section}}</h2>
+                        <ul class="exp">
+                            {% for item in exp.exper %}
+                            <li>
+                                <h4>{{ item.company }} <span>{{ item.date }}</span></h4>
+                                <p>{{ item.desc | safe}}</p>
+                                <ul>
+                                    {% for sub_item in item.project %}
+                                        <li>
+                                            <div class="circle"></div>
+                                            <h4>{{ sub_item.name }} {{ sub_item.date }}
+                                            {% if sub_item.website %}
+                                            <a href="{{ sub_item.website }}" target="_blank"><i class="fa fa-link"></i>Demo</a>
+                                            {% endif %}
+                                            {% if sub_item.source_code %}
+                                            <a href="{{ sub_item.source_code }}" target="_blank"><i class="fa fa-link"></i>SourceCode</a>
+                                            {% endif %}
+                                            </h4>
+                                            <div class="clearfix">
+                                              {% if sub_item.img %}<img src="{{ sub_item.img }}">{% endif %}
+                                              {{ sub_item.des |safe }}
+                                            </div>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                
                 {% endfor %}
             </li>
         </ul>
