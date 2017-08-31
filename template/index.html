@@ -51,21 +51,6 @@
                 </dd>
             </li>
             {% endif %}
-            {% if exper %}
-            <li class="someRight">
-                <dt><i class="fa fa-bookmark"></i>Experience. 实习经历</dt>
-                <dd>
-                    {% for item in exper %}
-                    <ul>
-                        <li>
-                          {{ item.date }}   {{ item.company }}
-                          <p>{{ item.desc | safe}}</p>
-                        </li>
-                    </ul>
-                    {% endfor %}
-                </dd>
-            </li>
-            {% endif %}
             <li class="skill">
                 <dt><i class="fa fa-bookmark"></i>Tech. 主要技能点</dt>
                 {% for item in tech %}
@@ -94,7 +79,7 @@
                 </ul>
                 {% endfor %}
             </li>
-            <li>
+            <li class="experience">
                 <dt><i class="fa fa-bookmark"></i>Experience. 项目经验</dt>
                 {% for exp in experience %}
                     {% if exp.section == '个人项目' %}
