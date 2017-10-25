@@ -1,0 +1,22 @@
+{
+  "name": "resume-it",
+  "version": "2.0.0",
+  "description": "A online resume generator website.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiao555/resume-it.git"
+  },
+  "keywords": [
+    "resume-it"
+  ],
+  "author": "xiao555",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xiao555/resume-it/issues"
+  },
+  "homepage": "https://github.com/xiao555/resume-it#readme"
+}
