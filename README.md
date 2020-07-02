@@ -10,6 +10,8 @@ Resume-it
 Node version v7.7.0
 
 ## 风格参考
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fxiao555%2Fresume-it.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fxiao555%2Fresume-it?ref=badge_shield)
+
 
 [@DIYgod](http://html.love/)
 
@@ -83,3 +85,6 @@ npm run public
 ## LICENSE
 
 MIT
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fxiao555%2Fresume-it.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fxiao555%2Fresume-it?ref=badge_large)
